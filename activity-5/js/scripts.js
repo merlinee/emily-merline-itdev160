@@ -1,4 +1,4 @@
-// Data, simulate a database response
+// Array for data
 var data = [
   {
     name: 'atom-beautify',
@@ -33,7 +33,7 @@ var data = [
   }
 ];
 
-// Package constructor function
+// constructor
 function Package(data) {
   this.name = data.name;
   this.description = data.description;
@@ -45,21 +45,20 @@ function Package(data) {
   this.selector = data.selector;
 }
 
+//date function
 function getDate() {
   var today = new Date();
   document.getElementById('date').textContent = today.toDateString();
 };
 
 /**
- * Write's the package object's data to the appropriate
- * DOM elements utilizing the package selector property.
  * @param  {Package} package  Package object
  * @return {void}
  */
 
-// Function to write package data to page
+// to write data to page
 function writePackageInfo(package) {
-  // Get reference to DOM elements
+  // gett dom elements
   var selector = package.selector,
     nameEl = document.getElementById(selector + '-name'),
     descEl = document.getElementById(selector + '-description');
@@ -68,9 +67,8 @@ function writePackageInfo(package) {
     urlEl = document.getElementById(selector + '-url');
     downEl = document.getElementById(selector + '-downloads');
     starEl = document.getElementById(selector + '-stars');
-  // TODO: get reference to remaining package properties
 
-  // Write package data to DOM elements
+  // writing dom elements
   nameEl.textContent = package.name;
   descEl.textContent = package.description;
   imgEl.src = package.image;
@@ -84,19 +82,15 @@ function writePackageInfo(package) {
 }
 
 
-
+//function to write info
 function init() {
-  // Write package data
   getDate();
-
 
   for (let i = 0; i < data.length; i++) {
     const package = data[i];
-    //console.log(package.name);
     writePackageInfo(package);
   }
   }
 
-  //TODO: write other activity requirements
-
+//runs function
 init();
