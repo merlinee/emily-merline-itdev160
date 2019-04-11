@@ -1,0 +1,42 @@
+.out-message {
+  font-family: 'Dokdo', cursive;
+  background-color: #00dcff;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  font-size: large;
+
+}
+
+.in-message {
+  font-family: 'Pacifico', cursive;
+  background-color: #0080009e;
+  color: white;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+
+
+}
+
+.userimg {
+  display: inline-block;
+  margin-right: 20px;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+
+}
+
+.username {
+  font-family: 'Kanit', sans-serif !important;
+  display: inline-block;
+  margin-right: 5px;
+  color: black !important;
+
+}
+
+.usermsg {
+  display: inline-block;
+
+}
