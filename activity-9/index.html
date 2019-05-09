@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Fun Quotes</title>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase|Oswald" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+
+  <body>
+    <header id="main-header">
+      <h1>Fun Quotes</h1>
+      <div class="header-menu">
+        <button id="new-button">New</button>
+        </div>
+      </header>
+      <main>
+        <section id="sidebar">
+          <ul id="nav-container">
+
+            </ul>
+          </section>
+        <section id="post-container">
+          <section id="intro">
+            <h2>Welcome to Fun Quotes!</h2>
+            <p>
+              Need a quote? Select a topic from the menu!</p>
+              <blockquote>
+                Truth is a matter of the imagination
+                </blockquote>
+                <span class="author">Ursula K. LeGuin</span>
+            </section>
+          </section>
+        </main>
+        <div class="modal" id="modal-dialog">
+          <section>
+          <h2>Topic</h2>
+          <input type="text" id="edit-title-text" />
+          <h2>Author</h2>
+          <input type="text" id="edit-author-text" />
+          <span id="edit-title-message"></span>
+            </section>
+            <section class="modal-content">
+            <h2>Quote</h2>
+            <textarea id="edit-quote-text" ></textarea>
+            <span id="edit-content-message"></span>
+              </section>
+            <footer>
+              <button type="button" id="cancel-button">Cancel</button>
+              <button type="button" id="save-button">Save</button>
+              </footer>
+          </div>
+          <div id="modal-backdrop">
+
+            </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/scripts.js" charset="utf-8"></script>
+    </body>
+</html>
